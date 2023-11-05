@@ -2,7 +2,19 @@ package app;
 
 import java.util.Random;
 
+/**
+ * The Game class simulates a battle between two superheroes: Superman and Batman.
+ * It utilizes the random generation of health points for each hero and simulates
+ * the battle until one of the heroes runs out of health points.
+ */
+
 public class Game {
+	
+	 /**
+     * The main method is the entry point for the simulation.
+     *
+     * @param args command line arguments (not used in this application).
+     */
     public static void main(String[] args) {
         Random rand = new Random();
         int health1 = rand.ints(1, (1000 + 1)).findFirst().getAsInt();
